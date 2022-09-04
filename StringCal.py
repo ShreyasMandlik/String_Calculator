@@ -1,0 +1,3 @@
+
+def StringCal(self):
+    pass
