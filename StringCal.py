@@ -1,9 +1,11 @@
 
 def calculator(str):
-    
-    if str=="":
-        return 0
+    sum=0
+    for i in str:
+        if i.isdigit():
+            sum+=int(i)
 
-    return int(str)
+    
+    return sum
 
     
