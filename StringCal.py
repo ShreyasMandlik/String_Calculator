@@ -1,3 +1,7 @@
 
-def StringCal(self):
-    pass
+def calculator(str):
+    
+    if str=="":
+        return 0
+
+    
