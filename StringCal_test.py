@@ -8,3 +8,7 @@ class TestStringCal(unittest.TestCase):
         result=StringCal.calculator("")
         self.assertEqual(result,0)
 
+    def test_Single_Number_String(self):
+        result=StringCal.calculator("1")
+        self.assertEqual(result,1)
+
