@@ -10,6 +10,11 @@ class TestStringCal(unittest.TestCase):
         result=StringCal.calculator("")
         self.assertEqual(result,0)
 
+
+    def test_Single_Numeric_String(self):
+        result=StringCal.calculator("1")
+        self.assertEqual(result,1)
+
     def test_More_than_one_Numeric_Number_String_having_Delimiter(self):
         result=StringCal.calculator("//;\n1;2")
         self.assertEqual(result,3)
