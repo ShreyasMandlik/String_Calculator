@@ -1,11 +1,20 @@
-
-def calculator(str):
+import re
+def calculator(s):
     sum=0
-    for i in str:
-        if i.isdigit():
-            sum+=int(i)
 
+    result = [int(d) for d in re.findall(r'-?\d+', s)]
     
+
+    for i in result:
+        if i<0:
+            return "negative not allowed"
+            break
+        
+        else:
+            sum+=i
+
+
     return sum
-
     
+
+calculator('-5+2y')
